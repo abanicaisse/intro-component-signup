@@ -15,7 +15,7 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: hsla(0, 100%, 74%, .6);
+    background-color: hsla(0, 100%, 74%, .8);
 }
 
 body {
@@ -133,4 +133,55 @@ form .terms > span {
 .attribution > a {
     color: var(--green);
     text-decoration: none;
+}
+
+/*Desktop version stylings*/
+@media screen and (min-width: 1000px) {
+    body {
+        background: url(/images/bg-intro-desktop.png);
+    }
+
+    main {
+        width: min(100%, 90rem);
+        margin: auto;
+    }
+
+    .intro {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .intro__hook {
+        text-align: left;
+    }
+
+    .intro__hook h1 {
+        font-size: 2rem;
+    }
+    
+    .intro__hook p {
+        font-size: 1.2rem;
+    }
+    .try-it {
+        padding: 1rem;
+    }  
+
+
+    @media screen and (min-width: 1300px) {
+        .intro {
+            width: min(80%, 75rem);
+        }
+
+        .intro__hook h1 {
+            font-size: 2.5rem;
+        }  
+    }
+
+
+    footer {
+        width: min(100%, 90rem);
+    }
 }

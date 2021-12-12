@@ -135,6 +135,19 @@ form .terms > span {
     text-decoration: none;
 }
 
+/* Error Messages */
+.error {
+    position: relative;
+}
+
+.error::before {
+    content: url(/images/icon-error.svg);
+    position: absolute;
+    right: 5%;
+    top: -10%;
+}
+
+
 /*Desktop version stylings*/
 @media screen and (min-width: 1000px) {
     body {

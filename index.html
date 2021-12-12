@@ -23,11 +23,20 @@
       <section class="intro__signup">
         <p class="try-it"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       
-        <form action="" class="signup">
-          <input type="text" placeholder="First Name" id="fName">
-          <input type="text" placeholder="Last Name" id="lName">
-          <input type="email" placeholder="Email Address" id="email">
-          <input type="password" placeholder="Password">
+        <form action="" class="signup" id="form">
+          <span class="inputs">
+            <input type="text" placeholder="First Name" id="fName" autocomplete="hidden">
+          </span>
+          <span class="inputs">
+            <input type="text" placeholder="Last Name" id="lName" autocomplete="hidden">
+          </span>
+          <span class="inputs">
+            <input type="email" placeholder="Email Address" id="email">
+          </span>
+          <span class="inputs">
+            <input type="password" placeholder="Password" id="password">
+          </span>
+
           <button type="submit" id="submit-btn">CLAIM YOUR FREE TRIAL</button>
           <P class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></P>
         </form>
@@ -42,5 +51,8 @@
       Coded by <a href="https://www.github.com/abanicaisse">Aba Nicaisse</a>.
     </p>
   </footer>
+
+<script src="main.js"></script>
+  
 </body>
 </html>

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
@@ -24,20 +27,35 @@
         <p class="try-it"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       
         <form action="" class="signup" id="form">
-          <span class="inputs">
-            <input type="text" placeholder="First Name" id="fName" autocomplete="hidden">
-          </span>
-          <span class="inputs">
-            <input type="text" placeholder="Last Name" id="lName" autocomplete="hidden">
-          </span>
-          <span class="inputs">
-            <input type="email" placeholder="Email Address" id="email">
-          </span>
-          <span class="inputs">
-            <input type="password" placeholder="Password" id="password">
-          </span>
+          <div>
+            <span class="inputs">
+              <input type="text" placeholder="First Name" id="fName" autocomplete="hidden">
+            </span>
+            <p class="error-msg">First Name cannot be empty</p>
+          </div>
 
-          <button type="submit" id="submit-btn">CLAIM YOUR FREE TRIAL</button>
+          <div>
+            <span class="inputs">
+              <input type="text" placeholder="Last Name" id="lName" autocomplete="hidden">
+            </span>
+            <p class="error-msg">Last Name cannot be empty</p>
+          </div>
+
+          <div>
+            <span class="inputs">
+              <input type="email" placeholder="Email Address" id="email">
+            </span>
+            <p class="error-msg">Looks like this is not an email</p>
+          </div>
+
+          <div>
+            <span class="inputs">
+              <input type="password" placeholder="Password" id="password">
+            </span>
+            <p class="error-msg">Please Enter a stronger password</p>
+          </div>
+
+          <input type="submit" id="submit-btn" value="CLAIM YOUR FREE TRIAL">
           <P class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></P>
         </form>
       </section>
